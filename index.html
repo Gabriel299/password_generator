@@ -11,7 +11,7 @@
 
 <body class="bg-bg text-title">
 
-  <h1 class="text-h1 text-center">Password Generator</h1>
+  <h1 class="text-h1 text-center mt-2">Password Generator</h1>
 
   <article class="bg-[#101f0c8c] backdrop-blur-sm border border-[#f4c43052] w-[40%] mx-auto rounded-xl my-6  p-8">
 
@@ -36,7 +36,7 @@
       </button>
     </section>
 
-    <section class="grid grid-cols-8 items-center gap-2 mb-6 mr-10">
+    <section class="grid grid-cols-8 items-center gap-2 mb-6 mr-10" id="security">
       <p class="text-text text-[1rem] col-span-2">SICUREZZA</p>
       <div class="border border-red-500 h-3 rounded-full"></div>
       <div class="border border-red-500 h-3 rounded-full"></div>
@@ -56,19 +56,19 @@
     <!-- CHECKBOX -->
     <section class="grid grid-cols-2 grid-rows-2 gap-4">
       <div class="flex items-center gap-1">
-        <input type="checkbox" id="maiusc" checked class="w-5.5 h-5.5">
+        <input type="checkbox" id="maiusc" checked class="w-5.5 h-5.5" onclick="generatePassword()">
         <label for="maiusc" class="text-text text-checkbox ml-3">Lettere maiuscole</label>
       </div>
       <div class="flex items-center gap-1">
-        <input type="checkbox" id="minusc" checked class="w-5.5 h-5.5">
+        <input type="checkbox" id="minusc" checked class="w-5.5 h-5.5" onclick="generatePassword()">
         <label for="minusc" class="text-text text-checkbox ml-3">Lettere minuscole</label>
       </div>
       <div class="flex items-center gap-1">
-        <input type="checkbox" id="numbers" checked class="w-5.5 h-5.5">
+        <input type="checkbox" id="numbers" checked class="w-5.5 h-5.5" onclick="generatePassword()">
         <label for="numbers" class="text-text text-checkbox ml-3">Numeri</label>
       </div>
       <div class="flex items-center gap-1">
-        <input type="checkbox" id="symbols" checked class="w-5.5 h-5.5">
+        <input type="checkbox" id="symbols" checked class="w-5.5 h-5.5" onclick="generatePassword()">
         <label for="symbols" class="text-text text-checkbox ml-3">Simboli</label>
       </div>
     </section>

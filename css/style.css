@@ -1,15 +1,11 @@
 @import "tailwindcss";
 
-:root {
-  --card: #101f0c8c;
-}
-
 @theme inline {
   --color-bg: #124A26;
   --color-title: #f4c430;
   --color-text: #d0eaca;
   --color-btn-text: #3E2E00;
-  --color-card: var(--card);
+  --color-card: #101f0c8c;
   --color-bg-password: #002109;
   --text-h1: 3.3rem;
   --text-h2: 2.1rem;

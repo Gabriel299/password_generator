@@ -1,18 +1,32 @@
 @import "tailwindcss";
 
+:root {
+  --card: #101f0c8c;
+}
+
 @theme inline {
   --color-bg: #124A26;
   --color-title: #f4c430;
   --color-text: #d0eaca;
+  --color-btn-text: #3E2E00;
+  --color-card: var(--card);
+  --color-bg-password: #002109;
   --text-h1: 3.3rem;
   --text-h2: 2.1rem;
+  --text-h3: 1.8rem;
   --text-checkbox: 1.5rem;
   --text-paragraph: 1.4rem;
+  --text-paragraph-mobile: 1.2rem;
+}
+
+:root, body {
+  height: 100%;
 }
 
 body {
-  font-family: "Merriweather";
+  font-family: "Merriweather", sans-serif;
   font-weight: normal;
+  overflow: hidden;
 }
 
 p {
@@ -66,7 +80,7 @@ input[type="range"]::-moz-range-thumb {
 input[type="checkbox"] {
   appearance: none;
   border: solid 1px #f4c430;
-  background-color: #203A27;
+  background-color: #002109 ;
   position: relative;
 }
 
@@ -77,6 +91,6 @@ input[type="checkbox"]:checked::after {
   width: 100%;
   height: 100%;
   background-color: #f4c430;
-  content: "✓";
+  content: "✔";
   color: #fff;
 }
